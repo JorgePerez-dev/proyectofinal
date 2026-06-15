@@ -1,27 +1,36 @@
 package com.gamingstore.backend.dto;
 
+// Clase DTO que recibe los datos enviados desde el formulario de login.
 public class LoginRequest {
 
-    private String email;
+// Email que introduce el usuario al iniciar sesión.
+private String email;
 
-    private String password;
+// Contraseña que introduce el usuario al iniciar sesión.
+private String password;
 
-    public LoginRequest() {
-    }
+// Constructor vacío necesario para que Spring pueda crear el objeto.
+public LoginRequest() {
+}
 
-    public String getEmail() {
-        return email;
-    }
+// Devuelve el email recibido desde el frontend.
+public String getEmail() {
+    return email;
+}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+// Guarda el email recibido desde el frontend.
+public void setEmail(String email) {
+    this.email = email;
+}
 
-    public String getPassword() {
-        return password;
-    }
+// Devuelve la contraseña recibida desde el frontend.
+public String getPassword() {
+    return password;
+}
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+// Guarda la contraseña recibida desde el frontend.
+public void setPassword(String password) {
+    this.password = password;
+}
+
 }
